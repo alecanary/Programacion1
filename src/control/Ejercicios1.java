@@ -91,10 +91,10 @@ public class Ejercicios1 {
 
 				}
 			}
-			// creamos el intento
+			// creamos el intento.
 			Intento intento = new Intento(numeroJugado, new Date());
 
-			// guardamos el intento
+			// guardamos el intento.
 			intentos[contadorIntentos++] = intento;
 
 			// mostrar los intentos hasta ahora ...
