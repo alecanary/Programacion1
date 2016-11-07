@@ -43,7 +43,23 @@ public class Ejercicios1 {
 		// Date(), 15, "20120901");
 
 		// ej1.creaListaPersonas();
-		ej1.adivinaNumero();
+		 ej1.adivinaNumero();
+	}
+
+	public String[] ordenaListaCadenas(String[] lista) {
+		for (int i = 0; i < lista.length - 1; i++) {
+			for (int j = i + 1; j < lista.length; j++) {
+				if (lista[i].compareTo(lista[j]) > 0) // Hay que permutar.
+				{
+
+					String aux = lista[j];
+					lista[j] = lista[i];
+					lista[i] = aux;
+				}
+			}
+		}
+
+		return lista;
 	}
 
 	public int generaAleatorioEntre(int min, int max) {
@@ -82,6 +98,7 @@ public class Ejercicios1 {
 					if (numeroTecleado.compareToIgnoreCase("Q") == 0) {
 						System.out.println("Fin de la partida, hasta pronto!");
 						System.exit(0);
+
 					}
 
 					numeroJugado = Integer.parseInt(numeroTecleado);
