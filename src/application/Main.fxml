@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controlador">
+   <children>
+      <Button layoutX="392.0" layoutY="99.0" mnemonicParsing="false" onAction="#manejaBoton" prefHeight="25.0" prefWidth="91.0" text="Probar" />
+      <Button layoutX="59.0" layoutY="309.0" mnemonicParsing="false" onAction="#cancelaBoton" prefHeight="52.0" prefWidth="91.0" text="Salir" />
+      <Label layoutX="90.0" layoutY="30.0" text="Número Min." />
+      <Label layoutX="83.0" layoutY="111.0" text="Número Max." />
+      <TextField fx:id="minimo" layoutX="51.0" layoutY="57.0" promptText="Mínimo" />
+      <TextField fx:id="maximo" layoutX="51.0" layoutY="138.0" promptText="Máximo" />
+      <TextField layoutX="370.0" layoutY="57.0" promptText="Intento" />
+      <Label layoutX="388.0" layoutY="22.0" text="Prueba un número" />
+      <TextArea layoutX="345.0" layoutY="180.0" prefHeight="200.0" prefWidth="200.0" promptText="Resultado" />
+      <Button layoutX="100.0" layoutY="188.0" mnemonicParsing="false" text="Generar" />
+      <Box layoutX="285.0" layoutY="138.0" />
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>
